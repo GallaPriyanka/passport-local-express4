@@ -53,20 +53,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+                    <li class="nav-item ative">
+                        <a class="nav-link active" href="/admin_home">Manage Users<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about_us">About Us</a>
+                        <a class="nav-link" href="/managedrivers">Manage Drivers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/register">Register</a>
+                        <a class="nav-link" href="/manageroutes">Manage Routes</a>
                     </li>
                 </ul>
             </div>
@@ -74,32 +68,36 @@
     </header>
     <main>
         <div style="font-family: Times New Roman; margin-top: 50px;">
-            <h1>
-                RIDE CANCELLATION &emsp;
-                <img src="../../images/cancel_icon.png" class="img-fluid" style="width:75px; height: 75px;">
-            </h1>
-            <div style="position: absolute; left: 50px;">
-                Please select a reason for cancellation:
-                <div class="dropdown">
-                    <br />
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px; border-style: solid; width: 500px; text-align: left;">
-                      Reason for cancellation
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <button class="dropdown-item" type="button">Driver arrived late</button>
-                      <button class="dropdown-item" type="button">Your trip got cancelled</button>
-                      <button class="dropdown-item" type="button">Changed your mind</button>
-                      <button class="dropdown-item" type="button">Any other reason</button>
-                    </div>
-                  </div>
-                  <br />
-                  <textarea type="text" style="border: 1px; border-style: solid; width: 500px; height: 300px;" placeholder="Comments" name="comments" required></textarea>
-                  <br /><br />
-                  <button class="btn-info" onclick="location.href = 'cancellation_confirmation'">SUBMIT</button>
-                  <br /><br />
-            </div>
+        <h3>USER DELETED</h3>
+        <br />
+        <div style="position: absolute; left:30px">
+            The user with following details has been deleted:
+
+            <div>
+            
+                    <div style="position: absolute; left:-20px">1. </div>
+                    <label><b>User ID </b>: </label><label> 843</label><br />
+                    <label><b>Name </b>: </label><label> Nandini Yadav</label><br />
+                       <label><b>Email: </b></label><label> nandiniyadav@gmail.com</label><br />
+                       <label><b>Given: </b></label><label> Nandini</label><br />
+                       <label><b>Family: </b></label><label> Yadav</label><br />
+                       <label><b>Street 1: </b></label><label> East Drive, Apt No: 125, Missouri West Apatrments</label><br />
+                       <label><b>Street 2: </b></label><label></label><br />
+                       <label><b>City: </b></label><label></label> Missouri</label><br />
+                       <label><b>State: </b></label><label></label> MI</label><br />
+                       <label><b>Zipcode: </b></label><label></label> 724576</label><br />
+                       <label><b>Country: </b></label><label></label> United States</label><br />
+         
+                       <br /><hr />
+                       <button class="btn-info" onclick="location.href = 'newusers'">MANAGE USERS</button>
+                   <br /><hr />
+
         </div>
+
+
+
+
+
     </main>
-    </script>
 </body>
 </html>

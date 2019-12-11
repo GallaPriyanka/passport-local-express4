@@ -79,12 +79,13 @@
             </h1>
             <br />
         <div>
-            <form action="ride_booking">
+            <form action="passenger_list">
                 <input type="text" placeholder="Enter Username" name="uname" required>
                 <br /> <br />
                 <input type="password" placeholder="Enter Password" name="pwd" required>
                 <br /> <br />
-                <button class="btn-info" type="submit">LOGIN</button>
+                <button class="btn-info" style="position: absolute; left: 500px;" type="submit" onclick="myvalidate()">USER LOGIN</button>
+                <button class="btn-info" style="position: absolute; left: 700px;" type="submit" onclick="location.href = 'adminlogin'">ADMIN LOGIN</button>
                 <br /> <br />
                 <label for="new user">New user?</label>
                 <label id="label_register_here" for="register here" onclick="location.href = 'register'">Register here</label>                
@@ -94,6 +95,13 @@
                 </label>
             </form>
         </div>
+        <script>
+            function myvalidate(){
+                if(uname.equals("bearcat") && pwd.equals("bearcat")){
+                    location.href = "passenger_list";
+                }
+            }
+        </script>
     </main>
 </body>
 </html>

@@ -54,7 +54,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about_us">About Us</a>
@@ -62,7 +62,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/login">Login</a>
                     </li>
                     <li class="nav-item">
@@ -75,31 +75,32 @@
     <main>
         <div style="font-family: Times New Roman; margin-top: 50px;">
             <h1>
-                RIDE CANCELLATION &emsp;
-                <img src="../../images/cancel_icon.png" class="img-fluid" style="width:75px; height: 75px;">
+                LOGIN
             </h1>
-            <div style="position: absolute; left: 50px;">
-                Please select a reason for cancellation:
-                <div class="dropdown">
-                    <br />
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px; border-style: solid; width: 500px; text-align: left;">
-                      Reason for cancellation
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <button class="dropdown-item" type="button">Driver arrived late</button>
-                      <button class="dropdown-item" type="button">Your trip got cancelled</button>
-                      <button class="dropdown-item" type="button">Changed your mind</button>
-                      <button class="dropdown-item" type="button">Any other reason</button>
-                    </div>
-                  </div>
-                  <br />
-                  <textarea type="text" style="border: 1px; border-style: solid; width: 500px; height: 300px;" placeholder="Comments" name="comments" required></textarea>
-                  <br /><br />
-                  <button class="btn-info" onclick="location.href = 'cancellation_confirmation'">SUBMIT</button>
-                  <br /><br />
-            </div>
+            <br />
+        <div>
+            <form action="admin_home">
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <br /> <br />
+                <input type="password" placeholder="Enter Password" name="pwd" required>
+                <br /> <br />
+                <button class="btn-info" style="" type="submit" onclick="location.href = 'admin_home'">LOGIN</button>
+                <br /> <br />
+                <label for="new user">New user?</label>
+                <label id="label_register_here" for="register here" onclick="location.href = 'register'">Register here</label>                
+                <br />
+                <label>
+                    <input type="checkbox" name="remember"> Forgot Password?
+                </label>
+            </form>
         </div>
+        <script>
+            function myvalidate(){
+                if(uname.equals("bearcat") && pwd.equals("bearcat")){
+                    location.href = "passenger_list";
+                }
+            }
+        </script>
     </main>
-    </script>
 </body>
 </html>

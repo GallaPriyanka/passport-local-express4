@@ -35,6 +35,29 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="../../images/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      text-align: center;
+      height: 600px;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+
+
 </head>
 
 <body>
@@ -54,12 +77,12 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about_us">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item">
@@ -75,29 +98,50 @@
     <main>
         <div style="font-family: Times New Roman; margin-top: 50px;">
             <h1>
-                RIDE CANCELLATION &emsp;
-                <img src="../../images/cancel_icon.png" class="img-fluid" style="width:75px; height: 75px;">
+                CONTACT US!!!
             </h1>
-            <div style="position: absolute; left: 50px;">
-                Please select a reason for cancellation:
-                <div class="dropdown">
-                    <br />
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px; border-style: solid; width: 500px; text-align: left;">
-                      Reason for cancellation
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <button class="dropdown-item" type="button">Driver arrived late</button>
-                      <button class="dropdown-item" type="button">Your trip got cancelled</button>
-                      <button class="dropdown-item" type="button">Changed your mind</button>
-                      <button class="dropdown-item" type="button">Any other reason</button>
-                    </div>
-                  </div>
-                  <br />
-                  <textarea type="text" style="border: 1px; border-style: solid; width: 500px; height: 300px;" placeholder="Comments" name="comments" required></textarea>
-                  <br /><br />
-                  <button class="btn-info" onclick="location.href = 'cancellation_confirmation'">SUBMIT</button>
-                  <br /><br />
+            <div class="row">
+                <div class="column" height= "500px";  style="background-color:rgb(112, 172, 241); height: 400px;">
+                <h2>ADDRESS</h2>
+                <p>Horizons West Apartments<br>
+                1115 N Clg Dr<br>
+                Maryville, MO 64468</p>
+                        
+                <p>Northwest Missouri State University<br>
+                1270 Automation Drive #500<br>
+                Windsor, MO 80550</p>
+                        
+               
+                        
+               
+                </div>
+                <div class="column" style="background-color:rgb(76, 153, 241); height: 400px;">
+                  <h2>EMAIL</h2>
+                  <p>Nandini Yadav Janga<br>
+                        yadavnandini97@gmail.com</p>
+                        
+                        <p>Priyanka Galla<br>
+                        priyankagalla789@gmail.com</p>
+                        
+                        <p>Deepak Sai Krishna Jayanthi<br>
+                        jayanthideepak596@gmail.com</p>
+                        
+                        <p>Satyavrath Injamuri<br>
+                        satyavrathinjamuri87@gmail.com</p>
+                </div>
+                <div class="column" style="background-color:rgb(50, 141, 245); height: 400px;">
+                  <h2>PHONE</h2>
+                  <p>Nandini Yadav Janga<br>
+                       Contact: 6608532033<br>
+                        </p>
+                        
+                        <p>Priyanka Galla<br>
+                            Contact: 6608532033<br>
+                            </p>
+                </div>
             </div>
+
+            
         </div>
     </main>
     </script>

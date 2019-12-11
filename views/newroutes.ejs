@@ -53,20 +53,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+                    <li class="nav-item ative">
+                        <a class="nav-link" href="/admin_home">Manage Users<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about_us">About Us</a>
+                        <a class="nav-link" href="/managedrivers">Manage Drivers</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/register">Register</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/manageroutes">Manage Routes</a>
                     </li>
                 </ul>
             </div>
@@ -74,32 +68,60 @@
     </header>
     <main>
         <div style="font-family: Times New Roman; margin-top: 50px;">
-            <h1>
-                RIDE CANCELLATION &emsp;
-                <img src="../../images/cancel_icon.png" class="img-fluid" style="width:75px; height: 75px;">
-            </h1>
-            <div style="position: absolute; left: 50px;">
-                Please select a reason for cancellation:
-                <div class="dropdown">
-                    <br />
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px; border-style: solid; width: 500px; text-align: left;">
-                      Reason for cancellation
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <button class="dropdown-item" type="button">Driver arrived late</button>
-                      <button class="dropdown-item" type="button">Your trip got cancelled</button>
-                      <button class="dropdown-item" type="button">Changed your mind</button>
-                      <button class="dropdown-item" type="button">Any other reason</button>
-                    </div>
-                  </div>
-                  <br />
-                  <textarea type="text" style="border: 1px; border-style: solid; width: 500px; height: 300px;" placeholder="Comments" name="comments" required></textarea>
-                  <br /><br />
-                  <button class="btn-info" onclick="location.href = 'cancellation_confirmation'">SUBMIT</button>
-                  <br /><br />
-            </div>
+        <h1>CURRENT ROUTES</h1>
+        <br />
+
+        <div style="position: absolute; left:30px">
+            
+           <div style="position: absolute; left:-20px">1. </div>
+           <label><b>Route ID </b>: </label><label> 91</label><br />
+           <label><b>Route starts from </b>: </label> NWMSU<label></label><br />
+              <label><b>Route ends at </b></label><label> Downton station, Kansas city</label><br />
+              <label><b>Main places covered </b></label><label> NWMSU, Walmart, Hyvee, US Bank, Highway</label><br />
+
+              <br /><hr />
+              <button class="btn-danger" onclick="location.href = 'deleteuser'">DELETE THIS ROUTE</button>
+              <br /><hr />
+
         </div>
+
+
+        <div style="position: absolute; left:830px">
+            
+                <div style="position: absolute; left:-20px">1. </div>
+                <label><b>Route ID </b>: </label><label> 92</label><br />
+           <label><b>Route starts from </b>: </label> Horizons West Aprtments, Maryville<label></label><br />
+              <label><b>Route ends at </b></label><label> AMC Theatres, Kansas city</label><br />
+              <label><b>Main places covered </b></label><label> NWMSU, Walmart, Hyvee, US Bank, Highway</label><br />
+                            
+              <br /><hr />
+                   <button class="btn-danger" onclick="location.href = 'deleteroute'">DELETE THIS ROUTE</button>
+                   <br /><hr />
+     
+             </div>
+     
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+     
+
+        <div style="position: absolute; left:30px">
+            
+                <div style="position: absolute; left:-20px">1. </div>
+                <label><b>Route ID </b>: </label><label> 91</label><br />
+           <label><b>Route starts from </b>: </label> Hyderabad House, Omaha<label></label><br />
+              <label><b>Route ends at </b></label><label> Oak Park Mall, Kansas city</label><br />
+              <label><b>Main places covered </b></label><label> Walmart, Hyvee, US Bank, MSU, Highway</label><br />
+                            
+              <br /><hr />
+                   <button class="btn-danger" onclick="location.href = 'deleteroute'">DELETE THIS ROUTE</button>
+                   <br /><hr />
+     
+             </div>
+     
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
     </main>
-    </script>
 </body>
 </html>

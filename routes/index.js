@@ -99,6 +99,56 @@ router.get('/ride_confirmation', (req, res) => {
     // res.render('home', { user : req.user });
 });
 
+router.get('/adminlogin', (req, res) => {
+    res.render('adminlogin', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/deleteuser', (req, res) => {
+    res.render('deleteuser', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/newusers', (req, res) => {
+    res.render('newusers', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/managedrivers', (req, res) => {
+    res.render('managedrivers', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/deletedriver', (req, res) => {
+    res.render('deletedriver', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/newdrivers', (req, res) => {
+    res.render('newdrivers', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/manageroutes', (req, res) => {
+    res.render('manageroutes', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/deleteroutes', (req, res) => {
+    res.render('deleteroutes', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/newroutes', (req, res) => {
+    res.render('newroutes', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/admin_home', (req, res) => {
+    res.render('admin_home', { });
+    // res.render('home', { user : req.user });
+});
+
 router.get('/cancellation_confirmation', (req, res) => {
     res.render('cancellation_confirmation', { });
     // res.render('home', { user : req.user });
@@ -116,6 +166,16 @@ router.get('/tracking', (req, res) => {
 
 router.get('/ride_cancel', (req, res) => {
     res.render('ride_cancel', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/contact', (req, res) => {
+    res.render('contact', { });
+    // res.render('home', { user : req.user });
+});
+
+router.get('/payment', (req, res) => {
+    res.render('payment', { });
     // res.render('home', { user : req.user });
 });
 

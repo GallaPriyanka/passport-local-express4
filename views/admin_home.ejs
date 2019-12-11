@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Rising Bulls</title>
+  <!-- https://fezvrasta.github.io/bootstrap-material-design/ -->
+  <!-- Bootstrap Material Design Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <!-- Bootstrap Material Design -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <!-- Bootstrap Material Design requires jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap Material Design requires Popper -->
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap Material Design  -->
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="app-logo-icon" sizes="40x40" href="../../images/app_logo.png">
+  <link rel="icon" type="image/png" sizes="500x500" href="../../images/app_logo_500x500.png">
+  <link rel="manifest" href="../../images/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../../images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <!-- https://fezvrasta.github.io/bootstrap-material-design/docs/4.0/examples/sticky-footer-navbar/ -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0099ffed">
+            <a class="navbar-brand" href="/">
+                <div>
+                    <img src="../../images/app_logo.png" class="img-fluid" style="width:40px; height: 40px;">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ative">
+                        <a class="nav-link active" href="/admin_home">Manage Users<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/managedrivers">Manage Drivers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/manageroutes">Manage Routes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div style="font-family: Times New Roman; margin-top: 50px;">
+        <h1>CURRENT USERS</h1>
+        <br />
+
+        <div style="position: absolute; left:30px">
+            
+           <div style="position: absolute; left:-20px">1. </div>
+           <label><b>User ID </b>: </label><label> 841</label><br />
+           <label><b>Name </b>: </label><label> Manoj Goppisetty</label><br />
+              <label><b>Email: </b></label><label> nagasaimanoj285@gmail.com</label><br />
+              <label><b>Given name: </b></label><label> Manoj</label><br />
+              <label><b>Family name: </b></label><label> Goppisetty</label><br />
+              <label><b>Street 1: </b></label><label> 1121 North College Drive, Apt No: 98, Horizon West Apatrments</label><br />
+              <label><b>Street 2: </b></label><label></label><br />
+              <label><b>City: </b></label><label></label> Maryville</label><br />
+              <label><b>State: </b></label><label></label> MO</label><br />
+              <label><b>Zipcode: </b></label><label></label> 64468</label><br />
+              <label><b>Country: </b></label><label></label> United States</label><br />
+
+              <br /><hr />
+              <button class="btn-danger" onclick="location.href = 'deleteuser'">DELETE THIS USER</button>
+              <br /><hr />
+
+        </div>
+
+
+        <div style="position: absolute; left:830px">
+            
+                <div style="position: absolute; left:-20px">1. </div>
+                <label><b>User ID </b>: </label><label> 842</label><br />
+                <label><b>Name </b>: </label><label> Priyanka Galla</label><br />
+                   <label><b>Email: </b></label><label> priyankagalla@gmail.com</label><br />
+                   <label><b>Given name: </b></label><label> Priyanka</label><br />
+                   <label><b>Family name: </b></label><label> Galla</label><br />
+                   <label><b>Street 1: </b></label><label> 1121 North College Drive, Apt No: 86, Horizon West Apatrments</label><br />
+                   <label><b>Street 2: </b></label><label></label><br />
+                   <label><b>City: </b></label><label></label> Guntur</label><br />
+                   <label><b>State: </b></label><label></label> Gn</label><br />
+                   <label><b>Zipcode: </b></label><label></label> 522006</label><br />
+                   <label><b>Country: </b></label><label></label> India</label><br />
+     
+                   <br /><hr />
+                   <button class="btn-danger" onclick="location.href = 'deleteuser'">DELETE THIS USER</button>
+                   <br /><hr />
+     
+             </div>
+     
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+     
+
+
+        <div style="position: absolute; left:30px">
+            
+                <div style="position: absolute; left:-20px">1. </div>
+                <label><b>User ID </b>: </label><label> 843</label><br />
+                <label><b>Name </b>: </label><label> Nandini Yadav</label><br />
+                   <label><b>Email: </b></label><label> nandiniyadav@gmail.com</label><br />
+                   <label><b>Given: </b></label><label> Nandini</label><br />
+                   <label><b>Family: </b></label><label> Yadav</label><br />
+                   <label><b>Street 1: </b></label><label> East Drive, Apt No: 125, Missouri West Apatrments</label><br />
+                   <label><b>Street 2: </b></label><label></label><br />
+                   <label><b>City: </b></label><label></label> Missouri</label><br />
+                   <label><b>State: </b></label><label></label> MI</label><br />
+                   <label><b>Zipcode: </b></label><label></label> 724576</label><br />
+                   <label><b>Country: </b></label><label></label> United States</label><br />
+     
+                   <br /><hr />
+                   <button class="btn-danger" onclick="location.href = 'deleteuser'">DELETE THIS USER</button>
+                   <br /><hr />
+     
+        </div>
+        <div style="position: absolute; left:830px">
+            
+                <div style="position: absolute; left:-20px">1. </div>
+                <label><b>User ID </b>: </label><label> 844</label><br />
+                <label><b>Name </b>: </label><label> Deepak Jayanthi</label><br />
+                   <label><b>Email: </b></label><label> deepakjayanthi@gmail.com</label><br />
+                   <label><b>Given name: </b></label><label> Deepak</label><br />
+                   <label><b>Family name: </b></label><label> Jayanthi</label><br />
+                   <label><b>Street 1: </b></label><label> 4th North Street, Apt No: 875, LA Apatrments</label><br />
+                   <label><b>Street 2: </b></label><label></label><br />
+                   <label><b>City: </b></label><label></label> Los Angels</label><br />
+                   <label><b>State: </b></label><label></label> LA</label><br />
+                   <label><b>Zipcode: </b></label><label></label>43557</label><br />
+                   <label><b>Country: </b></label><label></label> United States</label><br />
+     
+                   <br /><hr />
+                   <button class="btn-danger" onclick="location.href = 'deleteuser'">DELETE THIS USER</button>
+                   <br /><hr />
+     
+             </div>
+     
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
+    </main>
+</body>
+</html>
